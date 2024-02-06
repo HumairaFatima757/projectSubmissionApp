@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+
+.create-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 1176px;
+  margin-top: -20px;
+  width: 100px;
+  height: 50px;
+}
+
+.create-button:hover {
+  background-color: #45a049;
+}
+
+.plus-sign {
+  margin-right: 5px;
+}
+
+body {
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-right: 76px;
+  margin-top: 96px;
+  margin-left: 448px;
+  color: aliceblue;
+  font-weight: 400px;
+}
+
+.create-button {
+  align-items: center;
+}
+
+.plus-sign {
+  margin-right: 5px;
+}
+ .gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(243, 244, 246, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.group:hover .group-hover\:translate-y-0 {
+  transform: translateY(0);
+}
+
+#bigdiv {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  align-items: center;
+}

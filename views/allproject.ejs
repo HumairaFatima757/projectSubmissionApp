@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/allproject.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="bigdiv" class="bg-gray-800 min-h-screen">
+    
+      <div class="max-w-screen-xl mx-auto px-4 pt-16 pb-4">
+        <h1 class="text-4xl font-bold">ALL PROJECTs</h1>
+        <a href="/createproject" class="create-button">
+          <span class="plus-sign">+</span> Create
+        </a>
+
+        <div class="flex flex-wrap md:-mx-2 mt-4">
+          <% projects.forEach(function (elem) { %>
+          <div class="w-full md:w-1/2 lg:w-1/4 mb-4 lg:mb-0 mt-4">
+            <a
+              href="#"
+              class="h-72 md:h-96 block group relative mx-2 overflow-hidden shadow-lg"
+            >
+              <img
+                src="/images/uploads/<%= elem.image %>"
+                class="absolute z-0 object-cover w-full h-72 md:h-96 transform group-hover:scale-150"
+              />
+              <div
+                class="absolute gradient transition duration-300 group-hover:bg-black group-hover:opacity-90 w-full h-72 md:h-96 z-10"
+              ></div>
+              <div
+                class="absolute left-0 right-0 bottom-0 p-6 z-30 transform translate-y-1/2 transition duration-300 h-full group-hover:translate-y-0 delay-100"
+              >
+                <div class="h-1/2 relative">
+                  <div class="absolute bottom-0">
+                    <h2
+                      class="font-bold text-white leading-tight transition duration-300 text-xl pb-6 group-hover:underline"
+                    >
+                      <%= elem.projectname %>
+                    </h2>
+                  </div>
+                </div>
+                <div class="h-1/2">
+                  <p
+                    class="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100"
+                  >
+                    <%= elem.projectDetails %>
+                  </p>
+                  <button
+                    class="bg-white text-black text-sm px-3 py-1 font-semibold opacity-0 transition duration-300 group-hover:opacity-100 border-2 border-white focus:border-black focus:bg-gray-300"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

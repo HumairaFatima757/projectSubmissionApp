@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/profile.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Social-link-profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__text">
+          <div class="card__img">
+            <img
+              src="https://images.unsplash.com/photo-1627226515013-2e5995e3547e?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="card__detail">
+            <h1 class="card__header"><%= user.username   %></h1>
+            <h2 class="card__name"><%= user.user   %></h2>
+            <h3 class="card__job"><%=   %></h3>
+          </div>
+        </div>
+        <div class="card__btn">
+          <button>github</button>
+          <button>Frontend Mentor</button>
+          <button>LinkedIn</button>
+          <button>Twitter</button>
+          <button>Instagram</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
